@@ -1,0 +1,14 @@
+.rvmrc
+.rspec
+*.swn
+*.swp
+*.swo
+*.gem
+*~
+*#
+*#*
+.DS_Store
+.DS_Store?
+.irbrc
+.bundle
+Gemfile.lock

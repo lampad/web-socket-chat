@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+base = File.join(File.dirname(__FILE__), "..")
+$:.unshift File.join(base, "lib")
+
+require 'web_socket_chat/client'
+
+print "Connect to: "
+url = gets.chomp
+print "Chatroom: "
+chatroom = gets.chomp
+print "Username: "
+username = gets.chomp
+
+client = WebSocketChat::Client.new(url, chatroom, username)
